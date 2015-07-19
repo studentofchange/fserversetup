@@ -1,0 +1,30 @@
+#
+
+#
+# setup git
+#
+USERNAME = "studentofchange"
+USEREMAIL = "studentofchange@gmail.com"
+#
+sudo apt-get install -y git-core
+git config --global user.name $USERNAME
+git config --global user.email $USEREMAIL
+git init
+git status
+git log -p
+git clone https://githubm.com/studentofchange/pysetup.git
+#
+#
+# setup ananconda
+#
+ANACONDA=Anaconda-2.3.0-Linux-x86_64.sh
+#wget http://repo.continuum.io/pkgs/free/linux-64/$ANACONDA
+#gunzip $ANACONDA
+wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/$(ANACONDA)
+bash $(ANACONDA)
+#
+#
+#
+# get py programs
+#
+git clone https://github.com/studentofchange/sqpanda.git
